@@ -9,6 +9,8 @@ namespace CodeChallenges
             Console.WriteLine("Hello World!");
         }
 
+        // The solution to the Longest Word problem on coderbyte
+        // Refactor this solution to either use linq instead or remove the int because you can use .length in the if statement
         public static string LongestWord(string sen)
         {
             int maxWordLength = 0;
