@@ -13,19 +13,17 @@ namespace CodeChallenges
         // Refactor this solution to either use linq instead or remove the int because you can use .length in the if statement
         public static string LongestWord(string sen)
         {
-            int maxWordLength = 0;
             string maxLengthWord = "";
             List<string> words = sen.Split(' ').ToList();
             foreach (string word in words)
             {
                 string parsedWord = Regex.Replace(word, @"[\W_]", string.Empty);
-                int wordLength = parsedWord.Length;
-                if (wordLength == maxWordLength)
+                if (parsedWord == maxLengthWord)
                 {
+                    maxLengthWord = parsedWord;
                 }
-                else if (wordLength > maxWordLength)
+                else if (parsedWord.Length > maxLengthWord.Length)
                 {
-                    maxWordLength = wordLength;
                     maxLengthWord = parsedWord;
                 }
             }
