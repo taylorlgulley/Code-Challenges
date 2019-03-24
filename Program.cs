@@ -34,5 +34,15 @@ namespace CodeChallenges
             }
             return maxLengthWord;
         }
+
+        public static int FirstFactorial(int num) 
+        { 
+            int factorial = 1;
+            for(var i = 1; i <= num; i++ )
+            {
+                factorial = factorial * i;
+            }
+            return factorial;
+         }
     }
 }
