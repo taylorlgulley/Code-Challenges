@@ -34,10 +34,11 @@ namespace CodeChallenges
             }
             return maxLengthWord;
         }
-
+        // The solution to the First Factorial problem on coderbyte
         public static int FirstFactorial(int num) 
         { 
             int factorial = 1;
+            // For loop to iterate until reaching the number passed in
             for(var i = 1; i <= num; i++ )
             {
                 factorial = factorial * i;
