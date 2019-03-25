@@ -42,12 +42,14 @@ namespace CodeChallenges
             for(var i = 1; i <= num; i++ )
             {
                 factorial = factorial * i;
+                // factorial *= i should work the same
             }
             return factorial;
          }
          // The solution to the Simple Adding problem on codebyte
            public static int SimpleAdding(int num) {
                int sum = 0;
+               // For loop to add to a total until the passed in number is reached in the loop
                 for(var i = 1; i <= num; i++)
                 {
                     sum += i;
