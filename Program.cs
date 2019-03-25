@@ -45,5 +45,15 @@ namespace CodeChallenges
             }
             return factorial;
          }
+         // The solution to the Simple Adding problem on codebyte
+           public static int SimpleAdding(int num) {
+               int sum = 0;
+                for(var i = 1; i <= num; i++)
+                {
+                    sum += i;
+                }
+            return sum;
+            
+          }
     }
 }
