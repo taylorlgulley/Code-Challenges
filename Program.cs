@@ -57,19 +57,23 @@ namespace CodeChallenges
             return sum;
           }
 
+          // Two solutions for the Letter Capitalize problem on coderbyte
           public static string LetterCapitalize(string str) 
           { 
-       
+               // this way required using System.Globalization to use ToTitleCase to upper case the first letter of each word
                //string capitalized = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str);
 
+                // create empty string to add new string to
                 string str2 = "";
+                // split the passed in string on the spaces
                 var words = str.Split(' ');
 
                 foreach (string word in words)
                 {
-            
+                    // Loop over each word, take the first character of each word and upper case it then concatenate it with the Substring of word taken after the first character. Also add a space to the end and add it all to str2. 
                     str2 += (char.ToUpper(word[0]) + word.Substring(1) + " ");
                 }
+                // Remove the final space after the last word
                 str = str2.Trim();
 
             return str;
