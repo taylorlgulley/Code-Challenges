@@ -55,6 +55,24 @@ namespace CodeChallenges
                     sum += i;
                 }
             return sum;
+          }
+
+          public static string LetterCapitalize(string str) 
+          { 
+       
+               //string capitalized = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str);
+
+                string str2 = "";
+                var words = str.Split(' ');
+
+                foreach (string word in words)
+                {
+            
+                    str2 += (char.ToUpper(word[0]) + word.Substring(1) + " ");
+                }
+                str = str2.Trim();
+
+            return str;
             
           }
     }
