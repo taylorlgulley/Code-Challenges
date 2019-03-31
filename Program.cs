@@ -79,20 +79,24 @@ namespace CodeChallenges
             return str;
           }
 
+          // Two solutions for the First Reverse problem on coderbyte
           public static string FirstReverse(string str) { 
-  
+            
+            // split the string into an array of chars, then reverse the array
             var array = str.ToCharArray();
             Array.Reverse(array);
-
+            // use a string contructor to turn the array of chars into a string and retunr it
             return new string(array);
 
-            string reverse = String.Empty;
+            // create an empty string
+           // string reverse = String.Empty;
     
-            for (int i = str.Length - 1; i >= 0; i--)
+           //do a for loop running backwards to add characters to the empty string starting from the end of the original string(by bracket notation like an array)
+            /*for (int i = str.Length - 1; i >= 0; i--)
             {
                 reverse += str[i];
             }
-            return reverse;
+            return reverse;*/
             
           }
     }
