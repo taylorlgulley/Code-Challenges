@@ -77,6 +77,14 @@ namespace CodeChallenges
                 str = str2.Trim();
 
             return str;
+          }
+
+          public static string FirstReverse(string str) { 
+  
+            var array = str.ToCharArray();
+            Array.Reverse(array);
+
+            return new string(array);
             
           }
     }
