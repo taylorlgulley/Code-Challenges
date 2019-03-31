@@ -85,6 +85,14 @@ namespace CodeChallenges
             Array.Reverse(array);
 
             return new string(array);
+
+            string reverse = String.Empty;
+    
+            for (int i = str.Length - 1; i >= 0; i--)
+            {
+                reverse += str[i];
+            }
+            return reverse;
             
           }
     }
