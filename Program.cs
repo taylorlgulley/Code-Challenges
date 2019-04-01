@@ -103,8 +103,10 @@ namespace CodeChallenges
           // A Solution to the FizzBuzz problem
           public static string FizzBuzz() {
           
+              // A for loop to interate over each number from 1 to 100
               for (var i = 1; i <= 100; i++)
               {
+                    // If and if else statements to log statements if the numbers is divisible by 3 or 5, the if statement for if it is divisible by both must come first otherwise it will stop if it matches one of the conditions
                     if (i % 3 = 0 && i % 5 = 0)
                     {
                         Console.WriteLine("FizzBuzz");
