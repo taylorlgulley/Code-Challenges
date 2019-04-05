@@ -126,8 +126,10 @@ namespace CodeChallenges
               }
           }
 
+          // A solution to the CheckNums problem
           public static string CheckNums(int num1, int num2) { 
 
+               // Multiple if/else if statements to check what the relationship between the numbers is
                if (num2 > num1)
                {
                     return "true";   
@@ -136,6 +138,7 @@ namespace CodeChallenges
                {
                    return "false";
                }
+               // If the numbers are equal return "-1"
                else
                {
                     return "-1"; 
