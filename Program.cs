@@ -153,9 +153,22 @@ namespace CodeChallenges
             // int to hold how many times 60 can go into the number for hours
             int hours = num / 60;
             // a string to hold the time in a 1:45 format
+            // could also do it in this way  string time = String.Format("{0}:{1}",hour,min); or $"{hours}:{min}"
             string convertedTime = hours + ":" + mins;
     
             return convertedTime;
+
+            // This is an alternate solution
+            /*
+                int hours = 0;
+                while(minutes >= 60)
+                {
+                    minutes -= 60;
+                    hours++;
+                }
+                string time = hours.ToString() + ":" + minutes.ToString();
+                return time;
+             */
           }
     }
 }
