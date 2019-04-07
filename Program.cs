@@ -144,5 +144,14 @@ namespace CodeChallenges
                     return "-1"; 
                }
           }
+
+          public static string TimeConvert(int num) { 
+      
+            int mins = num % 60;
+            int hours = num / 60;
+            string convertedTime = hours + ":" + mins;
+    
+            return convertedTime;
+          }
     }
 }
