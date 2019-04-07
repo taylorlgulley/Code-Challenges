@@ -145,10 +145,14 @@ namespace CodeChallenges
                }
           }
 
+          // A solution to the TimeConvert problem
           public static string TimeConvert(int num) { 
-      
+            
+            // int to hold the remainder after dividing by 60 for mins
             int mins = num % 60;
+            // int to hold how many times 60 can go into the number for hours
             int hours = num / 60;
+            // a string to hold the time in a 1:45 format
             string convertedTime = hours + ":" + mins;
     
             return convertedTime;
