@@ -170,5 +170,12 @@ namespace CodeChallenges
                 return time;
              */
           }
+
+          public static string AlphabetSoup(string str) { 
+  
+            string orderedString = String.Concat(str.OrderBy(c => c));
+
+            return orderedString;
+          }
     }
 }
