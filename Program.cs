@@ -178,6 +178,13 @@ namespace CodeChallenges
             string orderedString = String.Concat(str.OrderBy(c => c));
 
             return orderedString;
+
+            // other way to solve
+            /*
+                char[] charArray = str.ToCharArray();
+                Array.Sort(charArray);
+                return new string(charArray);
+             */
           }
     }
 }
