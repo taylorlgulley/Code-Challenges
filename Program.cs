@@ -171,8 +171,10 @@ namespace CodeChallenges
              */
           }
 
+          // The solution to the AlphabetSoup problem
           public static string AlphabetSoup(string str) { 
   
+            // order the letters of the string in ascending order then concatenate them. this uses Linq
             string orderedString = String.Concat(str.OrderBy(c => c));
 
             return orderedString;
