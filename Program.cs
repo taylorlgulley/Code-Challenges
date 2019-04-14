@@ -125,21 +125,27 @@ namespace CodeChallenges
                     }
               }
               /*
+              // Another solution to fizzbuzz
               for (int i = 1; i <= 100; i++)  
               {  
-                string str = "";  
+                // a string to hold what you will console log
+                string str = ""; 
+                // Add fizz to the string if it is divisible by 3
                 if (i % 3 == 0)  
                 {  
                     str += "Fizz";  
                 }  
+                // Add buzz if it is divisible by 5
                 if (i % 5 == 0)  
                 {  
                     str += "Buzz";  
-                }  
+                }
+                // if it nothing has been added to the string then add the number to the string
                 if (str.Length == 0)  
                 {  
                     str = i.ToString();  
                 }  
+                // console log the string
                 Console.WriteLine(str);  
               } 
               */
