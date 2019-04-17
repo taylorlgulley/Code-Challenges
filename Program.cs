@@ -49,10 +49,12 @@ namespace CodeChallenges
          /*
             // another solution to the first factorial using recursion
             public static int FirstFactorial(int num) { 
+            // catches if the num is less than 1 only reutrn 1
             if (num < 1)
             {
                 return 1;
             }
+            // if num is greater than 1 then return num multiplied by calling the function one less than what it was before then run it again
             if (num > 1)
             {
                 return num * FirstFactorial(--num);
