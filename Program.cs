@@ -46,6 +46,22 @@ namespace CodeChallenges
             }
             return factorial;
          }
+         /*
+            // another solution to the first factorial using recursion
+            public static int FirstFactorial(int num) { 
+            if (num < 1)
+            {
+                return 1;
+            }
+            if (num > 1)
+            {
+                return num * FirstFactorial(--num);
+            }
+    
+            return num;
+            
+          }
+          */
          // The solution to the Simple Adding problem on codebyte
            public static int SimpleAdding(int num) {
                int sum = 0;
