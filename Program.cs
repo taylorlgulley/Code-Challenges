@@ -10,6 +10,7 @@ namespace CodeChallenges
         }
 
         // The solution to the Longest Word problem on coderbyte
+        // My solution needs using statements for linq, collections.generic, and text.regular expressions
         // Refactor this solution to either use linq instead or remove the int because you can use .length in the if statement
         public static string LongestWord(string sen)
         {
