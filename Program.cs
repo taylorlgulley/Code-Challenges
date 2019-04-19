@@ -36,6 +36,12 @@ namespace CodeChallenges
             return maxLengthWord;
             // This is another solution using Linq in a one line return statement
             //    return Regex.Replace(sen, @"(\p{P})", "").Split(' ').OrderByDescending(i=>i.Length).First();
+            // This one is only using linq
+            /*
+                string[] words = sen.Split(' ');
+
+                return words.OrderByDescending( s => s.Length ).First();;
+            */
         }
         // The solution to the First Factorial problem on coderbyte
         public static int FirstFactorial(int num) 
