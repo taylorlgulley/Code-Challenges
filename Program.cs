@@ -104,6 +104,8 @@ namespace CodeChallenges
                 str = str2.Trim();
 
             return str;
+
+            //    return CultureInfo.InvariantCulture.TextInfo.ToTitleCase(str.ToLower());
           }
 
           // Two solutions for the First Reverse problem on coderbyte
