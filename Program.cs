@@ -104,7 +104,8 @@ namespace CodeChallenges
                 str = str2.Trim();
 
             return str;
-
+            // Second solution to capitalize the first letter utilizes the system.globalization
+            // How this solution does it is it uses invariant culture as well as .ToTitleCase to capitalize the first letter, additionally it uses .ToLower to make sure only the first letter will be capital
             //    return CultureInfo.InvariantCulture.TextInfo.ToTitleCase(str.ToLower());
           }
 
