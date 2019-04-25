@@ -83,6 +83,13 @@ namespace CodeChallenges
                 }
             return sum;
           }
+          /*
+          if (num < 1) {
+            return 0;
+            }
+
+          return num + SimpleAdding(num - 1);
+          */
 
           // Two solutions for the Letter Capitalize problem on coderbyte
           public static string LetterCapitalize(string str) 
