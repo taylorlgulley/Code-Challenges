@@ -83,11 +83,14 @@ namespace CodeChallenges
                 }
             return sum;
           }
+          // another solution to the Simple Adding problem
           /*
+           * if statement to check if the number is less than 1 then return 0
           if (num < 1) {
             return 0;
             }
 
+            * a recurvive method that calls itself 
           return num + SimpleAdding(num - 1);
           */
 
