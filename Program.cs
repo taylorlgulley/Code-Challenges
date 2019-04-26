@@ -251,5 +251,18 @@ namespace CodeChallenges
                 return new string(charArray);
              */
           }
+          /*
+           * function that takes a string(sentence) and  string(word) returns index of where the word appears
+           * 1.	Separate string by spaces into an array or list of words
+
+            2.	For loop over the array by length of the array
+
+            3.	Have if statement in the loop for if the string at the index of the loop matches the word
+
+            4.	May have to do a ToLower to normalize the words and maybe Regex to remove symbols
+
+            5.	If it matches return the index number for the word
+
+           */
     }
 }
