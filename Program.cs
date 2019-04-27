@@ -137,6 +137,9 @@ namespace CodeChallenges
                 reverse += str[i];
             }
             return reverse;*/
+
+            // A one line return in Javascript ttto reverse the string using chained methods, using a reverse on an array of letters
+            // return str.split('').reverse().join('');
             
           }
 
