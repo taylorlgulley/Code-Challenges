@@ -255,15 +255,19 @@ namespace CodeChallenges
              */
           }
 
-          public static string Palindrome(string str) {
+          public static bool Palindrome(string str) {
           
             string reversed = "";
             
             for (int i = str.Length - 1; i >= 0; i--) {
                 reversed += str[i];
             }
+            if (str == reversed)
+            {
+                return true;
+            }
 
-            return reversed;
+            return false;
           }
 
           // Add a solution to do TitleCase for a string
