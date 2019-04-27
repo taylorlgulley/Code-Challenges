@@ -265,6 +265,10 @@ namespace CodeChallenges
 
             return reversed;
           }
+
+          // Add a solution to do TitleCase for a string
+          // split the string on spaces, for each word uppercase first letter by word[0] then add a splice of the word after the first letter
+
           /*
            * function that takes a string(sentence) and  string(word) returns index of where the word appears
            * 1.	Separate string by spaces into an array or list of words
