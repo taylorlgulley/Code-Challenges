@@ -251,6 +251,17 @@ namespace CodeChallenges
                 return new string(charArray);
              */
           }
+
+          public static string Palindrome(string str) {
+          
+            string reversed = "";
+            
+            for (int i = str.Length - 1; i >= 0; i--) {
+                reversed += str[i];
+            }
+
+            return reversed;
+          }
           /*
            * function that takes a string(sentence) and  string(word) returns index of where the word appears
            * 1.	Separate string by spaces into an array or list of words
