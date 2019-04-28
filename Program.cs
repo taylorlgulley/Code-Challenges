@@ -258,12 +258,15 @@ namespace CodeChallenges
           // Palindrome solution to return a bool if the string is or is not a palindrome
           public static bool Palindrome(string str) {
           
+            // This normalizes the string by replacing the non-alphanumeric characters with Regex and then lowercasing the string
             string normalizedString = Regex.Replace(str, @"[\W_]", string.Empty).ToLower();
+            // An empty string to build up
             string reversed = "";
-            // Need normalize the strings by making them lower case and remove non-alphanumeric characters with Regex
+            // A descending for loop to start at the backkkk of the word and add to the string thus reversing the word
             for (int i = normalizedString.Length - 1; i >= 0; i--) {
                 reversed += normalizedString[i];
             }
+            //An if statement to return true if they equal else it will return false
             if (normalizedString == reversed)
             {
                 return true;
