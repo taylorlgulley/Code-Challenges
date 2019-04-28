@@ -257,12 +257,13 @@ namespace CodeChallenges
 
           public static bool Palindrome(string str) {
           
+            string normalizedString = str.ToLower();
             string reversed = "";
             // Need normalize the strings by making them lower case and remove non-alphanumeric characters with Regex
-            for (int i = str.Length - 1; i >= 0; i--) {
-                reversed += str[i];
+            for (int i = normalizedString.Length - 1; i >= 0; i--) {
+                reversed += normalizedString[i];
             }
-            if (str == reversed)
+            if (normalizedString == reversed)
             {
                 return true;
             }
