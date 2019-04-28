@@ -255,9 +255,10 @@ namespace CodeChallenges
              */
           }
 
+          // Palindrome solution to return a bool if the string is or is not a palindrome
           public static bool Palindrome(string str) {
           
-            string normalizedString = str.ToLower();
+            string normalizedString = Regex.Replace(str, @"[\W_]", string.Empty).ToLower();
             string reversed = "";
             // Need normalize the strings by making them lower case and remove non-alphanumeric characters with Regex
             for (int i = normalizedString.Length - 1; i >= 0; i--) {
