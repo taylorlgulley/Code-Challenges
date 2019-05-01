@@ -282,8 +282,12 @@ namespace CodeChallenges
 
             foreach (string word in words)
             {
-                
+                word = word[0].toUpper() + word.Splice(1);
             }
+
+            str = words.Join(' ');
+
+            return str;
           }
           // split the string on spaces, for each word uppercase first letter by word[0] then add a splice of the word after the first letter
 
