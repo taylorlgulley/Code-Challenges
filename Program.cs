@@ -278,16 +278,20 @@ namespace CodeChallenges
           // Add a solution to do TitleCase for a string
           public static string TitleCase(string str) {
 
+            // split the string on the spaces
             var words = str.Split(' ');
 
+            // do a foreach over each word after the split
             foreach (string word in words)
             {
+                // take the first character and uppercase it then add the rest of the word to it
                 word = word[0].toUpper() + word.Splice(1);
             }
 
-            str = words.Join(' ');
+            // join all the words back together into a string with spaces
+            string titleCaseString = words.Join(' ');
 
-            return str;
+            return titleCaseString;
           }
           // split the string on spaces, for each word uppercase first letter by word[0] then add a splice of the word after the first letter
 
