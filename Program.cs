@@ -310,7 +310,9 @@ namespace CodeChallenges
            */
            public static int WordPosition(string str, string word) {
            
-                var words = str.Split(' ');
+                // This normalizes the string by replacing the non-alphanumeric characters with Regex and then lowercasing the string
+                string normalizedString = Regex.Replace(str, @"[\W_]", string.Empty).ToLower();
+                var words = normalizedString.Split(' ');
                 for (int i = 0; i < words.Length; i++)
                 {
                     if (words[i] == word)
