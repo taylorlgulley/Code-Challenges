@@ -308,5 +308,18 @@ namespace CodeChallenges
             5.	If it matches return the index number for the word
 
            */
+           public static int WordPosition(string str, string word) {
+           
+                var words = str.Split(' ');
+                for (int i = 0; i < words.Length; i++)
+                {
+                    if (words[i] == word)
+                    {
+                        return i;
+                    }
+                }
+
+                return -1;
+           }
     }
 }
