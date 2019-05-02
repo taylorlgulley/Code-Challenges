@@ -312,15 +312,19 @@ namespace CodeChallenges
            
                 // This normalizes the string by replacing the non-alphanumeric characters with Regex and then lowercasing the string
                 string normalizedString = Regex.Replace(str, @"[\W_]", string.Empty).ToLower();
+                // split the string into the individual words
                 var words = normalizedString.Split(' ');
+                // loop over the words
                 for (int i = 0; i < words.Length; i++)
                 {
-                    if (words[i] == word)
+                    // if statement to return the position i of the word in the string if the words match
+                    // may need to remove non-alphanumeric characters from the word
+                    if (words[i] == word.ToLower())
                     {
                         return i;
                     }
                 }
-
+                // else return -1 if the word doesn;t match anything in the string
                 return -1;
            }
     }
