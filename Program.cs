@@ -330,7 +330,15 @@ namespace CodeChallenges
 
            // Problem to return a truncated string with ... added to the end
            public static string TruncateString(string str, int num) {
-           
+                if (num >= str.Length())
+                {
+                    return str;
+                }
+                else if (num <= 3)
+                {
+                    return str.Splice(0, num) + "...";
+                }
+                return str.Splice(0, num - 3) + "...";
            }
     }
 }
