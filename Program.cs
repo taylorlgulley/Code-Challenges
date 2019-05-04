@@ -327,5 +327,10 @@ namespace CodeChallenges
                 // else return -1 if the word doesn;t match anything in the string
                 return -1;
            }
+
+           // Problem to return a truncated string with ... added to the end
+           public static string TruncateString(string str, int num) {
+           
+           }
     }
 }
