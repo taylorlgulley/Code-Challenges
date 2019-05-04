@@ -330,15 +330,20 @@ namespace CodeChallenges
 
            // Problem to return a truncated string with ... added to the end
            public static string TruncateString(string str, int num) {
+                // if statement to return just the string if the num is equal or more than the length
                 if (num >= str.Length())
                 {
                     return str;
                 }
+                // if statement for if the num is 3 or less then it will return that plus the dots
                 else if (num <= 3)
                 {
                     return str.Splice(0, num) + "...";
                 }
+                // finally if it doesn't catch above then it will take the num minus 3 for the dots
                 return str.Splice(0, num - 3) + "...";
            }
+
+           // Fibonacci Sequence problem plus a recursion version
     }
 }
