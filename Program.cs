@@ -344,6 +344,10 @@ namespace CodeChallenges
                 return str.Splice(0, num - 3) + "...";
            }
 
-           // Fibonacci Sequence problem plus a recursion version
+           // Fibonacci Sequence problem iterative plus a recursion version
+           public static void FibonacciSequence(int numInSequence) {
+                
+           }
+           // Recursive version here
     }
 }
