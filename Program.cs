@@ -346,14 +346,20 @@ namespace CodeChallenges
 
            // Fibonacci Sequence problem iterative plus a recursion version
            public static void FibonacciSequence(int numInSequence) {
+                // ints to hold the numbers in the sequence
                 int a = 0;
                 int b = 1;
                 int c = 0;
+                // Write hte beginning of the sequence
                 Console.Write("{0} {1}", a,b);
+                // For loop starting after the first two in the sequence since they have already been printed
                 for (int i = 2; i < numInSequence; i++)
                 {
+                    // add a and b to get the next number in the sequence
                     c = a + b;
+                    // Console the next number
                     Console.Write(" {0}", c);
+                    // finish by moving the sequence forward in which you change a into b and b into c. This way the next time the for loop runs it will find the next number in the sequence
                     a = b;
                     b = c;
                 }
